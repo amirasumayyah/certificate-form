@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Certificate Application Result</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="images/uitm logo.png" alt="University Logo" class="logo" />
+        <div class="header-info">
+            <h2>Bahagian Hal Ehwal Pelajar</h2>
+            <p>Unit Pentadbiran, Disiplin dan Aktiviti Pelajar</p>
+            <p>Tel : 04-4562038/2043/2034</p>
+        </div>
+
+        <div class="university-info">
+            <h3>Universiti Teknologi MARA (UiTM) Kedah</h3>
+            <p>Kampus Sungai Petani, 08400 Merbok, Kedah.</p>
+            <p>e-mail : trhepkdh@uitm.edu.my</p>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="result-section">
+        <h2>Permohonan Berjaya Dihantar</h2>
+        <div id="resultData"></div>
+        <div class="alert-success" role="alert">Permohonan anda telah berjaya dihantar. Sila tunggu kelulusan daripada pihak HEP.
+</div>
+
+    </section>
+    <div class="form-actions">
+        <button onclick="printResult()" class="btn-submit">Print</button>
+        <button class="btn-submit" onclick="window.location.href='form.html'">Isi Borang Baru</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 UiTM Kedah. All rights reserved.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const data = JSON.parse(localStorage.getItem('certificateData'));
+    const resultDiv = document.getElementById('resultData');
+
+    if (data) {
+        let html = `
+        <p><strong>Persatuan:</strong> ${data.persatuan}</p>
+        <p><strong>Program:</strong> ${data.program}</p>
+        <p><strong>Tarikh Program:</strong> ${data.tarikh}</p>
+        <p><strong>Masa Program:</strong> ${data.masa}</p>
+        <p><strong>Tempat:</strong> ${data.tempat}</p>
+        <p><strong>Tarikh Hantar Laporan:</strong> ${data.tarikhreport}</p>
+        <p><strong>Jumlah SijilPenghargaan:</strong> ${data.penghargaan}</p>
+        <p><strong>Jumlah SijilPenyertaan:</strong> ${data.penyertaan}</p>
+        <hr/>
+        <p><strong>Nama Pemohon:</strong> ${data.namapemohon}</p>
+        <p><strong>Jawatan:</strong> ${data.jawatan}</p>
+        <p><strong>Kod Kursus / Fakulti:</strong> ${data.kodkursus}</p>
+        <p><strong>Alamat:</strong> ${data.alamat}</p>
+        <p><strong>No. Tel:</strong> ${data.phonenum}</p>
+        `;
+        resultDiv.innerHTML = html;
+    } else {
+        resultDiv.innerHTML = '<p>Tiada data permohonan dijumpai. Sila isi borang terlebih dahulu.</p>';
+    }
+});
+
+
+    function printResult() {
+        window.print();
+    }
+
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Application - ICT600 Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/uitm logo.png" alt="University Logo" class="logo">
+             <div class="header-info">
+                <h2>Bahagian Hal Ehwal Pelajar</h2>
+                <p>Unit Pentadbiran, Disiplin dan Aktiviti Pelajar</p>
+                <p>Tel : 04-4562038/2043/2034</p>
+            </div>
+
+            <div class="university-info">
+                <h3>Universiti Teknologi MARA (UiTM) Kedah</h3>
+                <p>Kampus Sungai Petani, 08400 Merbok, Kedah.</p>
+                <p>e-mail : trhepkdh@uitm.edu.my</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Maklumat Diri</a></li>
+                <li><a href="form.html">Borang Permohonan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>BORANG PERMOHONAN MENDAPATKAN SIJIL PENGHARGAAN / PENYERTAAN</h2>
+            <form id="certificateForm">
+                <h3>Butir - Butir Am</h3>
+                <div class="form-group">
+                    <label for="persatuan">Persatuan:</label>
+                    <input type="text" id="persatuan" name="persatuan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program:</label>
+                    <input type="text" id="program" name="program" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tarikh">Tarikh:</label>
+                        <input type="date" id="tarikh" name="tarikh" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="masa">Masa:</label>
+                        <input type="time" id="masa" name="masa" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tempat">Tempat:</label>
+                    <input type="text" id="tempat" name="tempat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarikhreport">Tarikh Hantar Laporan:</label>
+                    <input type="date" id="tarikhreport" name="tarikhreport" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="penghargaan"> Jumlah Sijil Penghargaan:</label>
+                        <input type="number" id="penghargaan" name="penghargaan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="penyertaan"> Jumlah Sijil Penyertaan:</label>
+                        <input type="number" id="penyertaan" name="penyertaan" required>
+                    </div>
+                </div>
+
+                <h3>Perakuan Pemohon</h3>
+                <div class="form-group">
+                    <label for="namapemohon">Nama:</label>
+                    <input type="text" id="namapemohon" name="namapemohon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jawatan">Jawatan:</label>
+                    <input type="text" id="jawatan" name="jawatan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kodkursus">Kod Kursus / Fakulti:</label>
+                    <input type="text" id="kodkursus" name="kodkursus" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phonenum">No. Tel:</label>
+                    <input type="tel" id="phonenum" name="phonenum" required>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="pengesahan" name="pengesahan" required>
+                        Saya mengakui bahawa sijil ini dianugerahkan kepada Jawatankuasa / Penyertaan atas sumbangan dalam menjayakan program seperti di atas.
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Hantar Permohonan</button>
+                    <button type="reset" class="btn-reset">Set Semula</button>
+                </div>
+
+                <div id="formResult" class="result-container"></div>
+                <div id="alertContainer"></div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UiTM Kedah. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

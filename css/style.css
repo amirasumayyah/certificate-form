@@ -1,0 +1,445 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../images/uitm.avif"); /* Tambah background image */
+    background-size: cover; /* Supaya gambar penuh */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Supaya gambar tetap semasa scroll */
+    background-position: center center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    overflow: hidden; /* pastikan content tak lari keluar */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10; 
+}
+
+
+.header-info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header-info p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #333;
+}
+
+.university-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.university-info h3 {
+  color: #2c3e50;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.university-info p {
+  font-size: 0.9em;
+    line-height: 1.4;
+    color: #333;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #800080;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #E8B028;
+}
+
+/* Main Content Styles */
+.welcome-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.profile-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.profile-image {
+    flex: 1;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.profile-details p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Form Styles */
+.form-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.form-section h3 {
+    margin: 20px 0 15px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    align-items: flex-start;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-submit,
+.btn-reset {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+.btn-reset {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #c0392b;
+}
+
+/* Result Container */
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    display: none;
+}
+
+.result-container h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    position: relative;
+    z-index: 10;
+    clear: both;
+    z-index: 9999;
+}
+
+/* Responsive Styles */
+@media (max-width: 798px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .profile-content {
+        flex-direction: column;
+    }
+    
+    .profile-image {
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Result Page Styles */
+    #resultData {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    #resultData h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    #resultData p {
+        font-size: 1em;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    .alert-container {
+    margin: 10px 0;
+    }
+
+    .alert {
+        background-color: #f8d7da;
+        color: #721c24;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        border: 1px solid #f5c6cb;
+        border-radius: 4px;
+    }
+
+    .alert-success {
+        padding: 12px 20px;
+        margin-top: 20px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 6px;
+        font-size: 1em;
+}
+
+    .status-success {
+        background-color: #d4edda; /* Hijau muda */
+        color: #155724;           /* Teks hijau gelap */
+        border: 1px solid #c3e6cb; /* Sempadan hijau */
+        padding: 15px;
+        border-radius: 6px;
+        font-size: 1.1em;
+        margin-top: 20px;
+    }
+
+    @media print {
+    body {
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+        font-size: 12px; /* Mengecilkan font untuk muat satu page */
+    }
+
+    .form-actions {
+        display: none; /* Sembunyikan butang semasa print */
+    }
+
+    main.container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        min-height: 80vh;
+    }
+
+    .result-section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+    }
+    #resultData {
+        background-color: white !important;
+        box-shadow: none !important;
+        padding: 10px;
+        margin: 0;
+        display: block !important;
+    }
+
+    .status-success {
+        background-color: #d4edda !important;
+        color: #155724 !important;
+        border: 1px solid #c3e6cb !important;
+        padding: 5px !important;
+        font-size: 12px !important;
+    }
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+}
+
+
+ }
