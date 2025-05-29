@@ -308,7 +308,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 798px) {
+@media (max-width: 2000px) {
     .form-row {
         flex-direction: column;
         gap: 0;
