@@ -42,43 +42,7 @@
     <p>&copy; 2025 UiTM Kedah. All rights reserved.</p>
 </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const data = JSON.parse(localStorage.getItem('certificateData'));
-    const resultDiv = document.getElementById('resultData');
-
-    if (data) {
-        let html = `
-        <p><strong>Persatuan:</strong> ${data.persatuan}</p>
-        <p><strong>Program:</strong> ${data.program}</p>
-        <p><strong>Tarikh Program:</strong> ${data.tarikh}</p>
-        <p><strong>Masa Program:</strong> ${data.masa}</p>
-        <p><strong>Tempat:</strong> ${data.tempat}</p>
-        <p><strong>Tarikh Hantar Laporan:</strong> ${data.tarikhreport}</p>
-        <p><strong>Jumlah Sijil Penghargaan:</strong> ${data.penghargaan}</p>
-        <p><strong>Jumlah Sijil Penyertaan:</strong> ${data.penyertaan}</p>
-        <hr/>
-        <p><strong>Nama Pemohon:</strong> ${data.namapemohon}</p>
-        <p><strong>Jawatan:</strong> ${data.jawatan}</p>
-        <p><strong>Kod Kursus / Fakulti:</strong> ${data.kodkursus}</p>
-        <p><strong>Alamat:</strong> ${data.alamat}</p>
-        <p><strong>No. Tel:</strong> ${data.phonenum}</p>
-        `;
-        resultDiv.innerHTML = html;
-    } else {
-        resultDiv.innerHTML = '<p>Tiada data permohonan dijumpai. Sila isi borang terlebih dahulu.</p>';
-    }
-});
-
-
-    function printResult() {
-        window.print();
-    }
-
-    function goBack() {
-        window.history.back();
-    }
-</script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
