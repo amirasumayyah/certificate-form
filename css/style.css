@@ -394,6 +394,7 @@ footer {
         margin: 0;
         padding: 0;
         font-size: 12px; /* Mengecilkan font untuk muat satu page */
+        page-break-after: avoid;
     }
 
     .form-actions {
