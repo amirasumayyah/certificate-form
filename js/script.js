@@ -97,6 +97,12 @@ document.addEventListener('DOMContentLoaded', function () {
         return isValid;
     }
 
+        if (performance.navigation.type === 2) {
+        localStorage.removeItem('certificateData');
+        
+        const formElement = document.getElementById('certificateForm');
+        if (formElement) formElement.reset();
+    }
     
 
     function showAlert(message) {
