@@ -135,9 +135,9 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Masa Program:</strong> ${data.masa}</p>
             <p><strong>Tempat:</strong> ${data.tempat}</p>
             <p><strong>Tarikh Hantar Laporan:</strong> ${data.tarikhreport}</p>
-            <p><strong>Jumlah SijilPenghargaan:</strong> ${data.penghargaan}</p>
-            <p><strong>Jumlah SijilPenyertaan:</strong> ${data.penyertaan}</p>
-            <hr/>
+            <p><strong>Jumlah Sijil Penghargaan:</strong> ${data.penghargaan}</p>
+            <p><strong>Jumlah Sijil Penyertaan:</strong> ${data.penyertaan}</p>
+            <hr/> 
             <p><strong>Nama Pemohon:</strong> ${data.namapemohon}</p>
             <p><strong>Jawatan:</strong> ${data.jawatan}</p>
             <p><strong>Kod Kursus / Fakulti:</strong> ${data.kodkursus}</p>
