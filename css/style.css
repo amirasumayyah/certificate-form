@@ -400,6 +400,10 @@ footer {
         display: none; /* Sembunyikan butang semasa print */
     }
 
+    footer {
+        display: none !important; /* Sembunyikan footer semasa print */
+    }
+
     main.container {
         max-width: 100%;
         padding: 0;
