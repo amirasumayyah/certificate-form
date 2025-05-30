@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
-         if (penghargaan === 0 && penyertaan === 0) {
-            showAlert('Sekurang-kurangnya satu jenis sijil mesti ada kuantiti lebih daripada 0.');
+        if ((penghargaan === 0 || isNaN(penghargaan)) && (penyertaan === 0 || isNaN(penyertaan))) {
+            showAlert('Jumlah sijil penyertaan dan penghargaan tidak boleh kedua-duanya kosong.');
             isValid = false;
         }
 
