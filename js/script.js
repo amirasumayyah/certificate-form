@@ -149,11 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
             resultDiv.innerHTML = '<p>Tiada data permohonan dijumpai. Sila isi borang terlebih dahulu.</p>';
         }
 
-        function printResult() {
+        window.printResult = function () {
             window.print();
         };
 
-        function goBack() {
+        window.goBack = function () {
             window.history.back();
         };
     }
