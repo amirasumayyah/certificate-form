@@ -7,10 +7,10 @@
 }
 
 body {
-    background-image: url("../images/uitm.avif"); /* Tambah background image */
-    background-size: cover; /* Supaya gambar penuh */
+    background-image: url("../images/uitm.avif");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Supaya gambar tetap semasa scroll */
+    background-attachment: fixed;
     background-position: center center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     color: #333;
@@ -26,7 +26,7 @@ body {
 /* Header Styles */
 header {
     position: relative;
-    overflow: hidden; /* pastikan content tak lari keluar */
+    overflow: hidden; 
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 10; 
 }
@@ -378,9 +378,9 @@ footer {
 }
 
     .status-success {
-        background-color: #d4edda; /* Hijau muda */
-        color: #155724;           /* Teks hijau gelap */
-        border: 1px solid #c3e6cb; /* Sempadan hijau */
+        background-color: #d4edda;
+        color: #155724;          
+        border: 1px solid #c3e6cb;
         padding: 15px;
         border-radius: 6px;
         font-size: 1.1em;
@@ -393,7 +393,7 @@ footer {
         color: black;
         margin: 0;
         padding: 0;
-        font-size: 12px; /* Mengecilkan font untuk muat satu page */
+        font-size: 12px;
         page-break-after: avoid;
     }
 
@@ -403,11 +403,7 @@ footer {
     }
 
     .form-actions {
-        display: none; /* Sembunyikan butang semasa print */
-    }
-
-    footer {
-        display: none !important; /* Sembunyikan footer semasa print */
+        display: none;
     }
 
     main.container {
@@ -450,6 +446,4 @@ footer {
         margin: 10mm;
     }
 }
-
-
- }
+}
