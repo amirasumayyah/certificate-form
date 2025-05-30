@@ -82,6 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
+         if (penghargaan === 0 && penyertaan === 0) {
+            showAlert('Sekurang-kurangnya satu jenis sijil mesti ada kuantiti lebih daripada 0.');
+            isValid = false;
+        }
+
 
         const isChecked = document.getElementById('pengesahan').checked;
         if (!isChecked) {
