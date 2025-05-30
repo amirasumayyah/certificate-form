@@ -397,6 +397,11 @@ footer {
         page-break-after: avoid;
     }
 
+    @page {
+          size: A4;
+          margin: 10mm;
+    }
+
     .form-actions {
         display: none; /* Sembunyikan butang semasa print */
     }
